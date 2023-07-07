@@ -1,685 +1,540 @@
 export const sampleLessons = [
-  {
-    id: 0,
-    title: 'Variables',
-    slug: 'variables',
-    description: 'En este curso aprenderas a declarar variables en JavaScript',
-    lessons: [
-      {
-        type: 'Teoric',
-        ovaMessage: 'Buen trabajo!',
-        ovaSide: 'right',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Variables en JavaScript',
-          },
-          {
-            order: 1,
-            type: 'paragraph',
-            content:
-              'Una variable es un nombre dado a una ubicación de memoria. Es la unidad básica de almacenamiento en un programa. Las variables también las podemos ver como un deposito donde se almacena un valor y esta constituida por un nombre, un tipo ya sea numérico, cadena de caracteres, Booleano, entre otros. JavaScript puede almacenar los siguientes valores: Números: 5, 6.5, 7 etc. Valores Reales: 1.24, 2.90, 5.01, etc. Cadena de caracteres: "Hola Estrada Web Group" etc. Booleano o valores lógicos: verdadero o falso (true, false). Además de los tipos de datos de datos anteriores, JavaScript también admite dos tipos de datos más, nulos y no definidos y un objeto de tipo de datos compuesto. Aprenderemos sobre estos tipos de datos a detalle en otros artículos.',
-          },
-          {
-            order: 2,
-            type: 'title',
-            content: 'Características de las variables en JavaScript',
-          },
-          {
-            order: 3,
-            type: 'paragraph',
-            content:
-              'El valor almacenado en una variable se puede cambiar durante la ejecución del programa. Una variable es solo un nombre dado a una ubicación de memoria, todas las operaciones realizadas en la variable afectan a esa ubicación de memoria. En JavaScript, todas las variables se deben declarar antes de poder utilizarlas.',
-          },
-          {
-            order: 4,
-            type: 'title',
-            content: 'Declaración de variables en JavaScript',
-          },
-          {
-            order: 5,
-            type: 'paragraph',
-            content:
-              'La declaración de una variable en JavaScript se realiza mediante la palabra reservada var. La sintaxis para declarar una variable es: var nombreVariable; donde nombreVariable es el nombre que le daremos a la variable. Ejemplo: var nombre; var edad; var sueldo; var estadoCivil; var fechaNacimiento; var direccion; var telefono; var email; var sexo; var nacionalidad; var profesion; var empresa; var puesto; var direccionEmpresa; var telefonoEmpresa; var emailEmpresa; var salario; var fechaIngreso; var fechaEgreso; var motivoEgreso; var nombreJefe; var telefonoJefe; var emailJefe; var nombrePadre; var nombreMadre; var nombreConyuge; var nombreHijo; var nombreHija; var nombreHermano; var nombreHermana; var nombreAmigo; var nombreAmiga; var nombreVecino; var nombreVecina; var nombreMascota; var nombreMascota; var nombreOtro;',
-          },
-        ],
-      },
-      {
-        type: 'practical',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Desafio de crear una variable en JavaScript',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'En este desafio deberas corregir un error en el codigo para que la variable se declare correctamente.',
-          },
-          {
-            order: 3,
-            type: 'code_challenge',
-            content: 'avr carro;  ',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 1,
-    title: 'Declaracion de variables en JavaScript',
-    slug: 'declaracion-de-variables-en-javascript',
-    description:
-      'En esta seccion aprenderas a declarar variables en JavaScript',
-    lessons: [
-      {
-        type: 'teoric',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Declaracion de variables en JavaScript',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              ' La declaración de una variable en JavaScript se realiza mediante la palabra reservada var. La sintaxis para declarar una variable es: var nombreVariable; donde nombreVariable es el nombre que le daremos a la variable.',
-          },
-          {
-            order: 3,
-            type: 'snippet',
-            content:
-              'var nombre; var edad; var sueldo; var estadoCivil; var fechaNacimiento; var direccion; var telefono; var email; var sexo; var nacionalidad; var profesion; var empresa; var puesto; var direccionEmpresa; var telefonoEmpresa; var emailEmpresa; var salario; var fechaIngreso; var fechaEgreso; var motivoEgreso; var nombreJefe; var telefonoJefe; var emailJefe; var nombrePadre; var nombreMadre; var nombreConyuge; var nombreHijo; var nombreHija; var nombreHermano; var nombreHermana; var nombreAmigo; var nombreAmiga; var nombreVecino; var nombreVecina; var nombreMascota; var nombreMascota; var nombreOtro;',
-          },
-          {
-            order: 4,
-            type: 'title',
-            content: 'Asignación de valores a variables en JavaScript',
-          },
-          {
-            order: 5,
-            type: 'paragraph',
-            content:
-              'La asignación de valores a una variable en JavaScript se realiza mediante el operador de asignación =. La sintaxis para asignar un valor a una variable es: nombreVariable = valor; donde nombreVariable es el nombre de la variable y valor es el valor que se le asignará a la variable.Ejemplo',
-          },
-          {
-            order: 6,
-            type: 'snippet',
-            content:
-              'nombre = "Estrada Web Group"; edad = 25; sueldo = 1000.00; estadoCivil = "Soltero"; fechaNacimiento = "01/01/1990"; direccion = "Calle 1, Colonia 1, Ciudad 1, Pais 1"; telefono = "12345678"; email = jgkd@gmail.com',
-          },
-        ],
-      },
-      {
-        type: 'practical',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content:
-              'Desafio de declarar una variable con un valor en JavaScript',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'En este desafio deberas corregir el error en la declaracion de una variable con un valor en JavaScript.',
-          },
-          {
-            order: 3,
-            type: 'code_challenge',
-            content: 'estadocivir ? "soltero"',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: 'Condicionales',
-    slug: 'condicionales',
-    description:
-      'En esta pagina aprenderas a utilizar condicionales en JavaScript',
-    lessons: [
-      {
-        type: 'teoric',
-
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Condicional IF',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'Un if en programación se utiliza para evaluar una expresión condicional: si se cumple la condición (es verdadera), ejecutará un bloque de código. Si es falsa, es posible ejecutar otras sentencias. Como hemos dicho, la condición es una condición lógica, sólo devolverá true o false, y se ejecutará si su valor es true. ¿Cómo funciona un if? Primero de todo, se evalúa la condición. Si el resultado se cumple, se ejecutará el código. Si el resultado no es true, el programa continúa con la sentencia siguiente. Lo habitual es que, si hay varias instrucciones que interesan ejecutar dónde de la evaluación, estén agrupadas con llaves { }. Utilizando solo IF.',
-          },
-          {
-            order: 3,
-            type: 'snippet',
-            content: 'if(condición){}',
-          },
-          {
-            order: 4,
-            type: 'paragraph',
-            content:
-              'El condicional IF se puede utilizar sin el else. Si se solicita un programa en el que se diga ÚNICAMENTE si una persona tiene sobrepeso de acuerdo a su índice de masa corporal, se utilizará el IF sin colocar la parte del else.',
-          },
-        ],
-      },
-      {
-        type: 'practical',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Desafio de condicionales',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'En este desafio deberas crear un condicional cualquiera, sin error de sintaxis y que se ejecute correctamente. Puedes utilizar cualquier tipo de condicional que hayas aprendido hasta ahora.',
-          },
-          {
-            order: 3,
-            type: 'code_challenge',
-            content: 'if(i=?){',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: 'Bucle FOR',
-    slug: 'bucle for',
-    description: 'En esta pagina aprenderas a utilizar bucle FOR en JavaScript',
-    lessons: [],
-  },
-  {
-    id: 4,
-    title: 'Bucle WHILE',
-    slug: 'bucle while',
-    description:
-      'En esta pagina aprenderas a utilizar bucle WHILE en JavaScript',
-    lessons: [
-      {
-        type: 'teoric',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Estructura de iteración WHILE',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'La estructura de control while es una estructura de control que permite repetir un bloque de instrucciones mientras que se cumpla una determinada condición.',
-          },
-          {
-            order: 3,
-            type: 'paragraph',
-            content:
-              'La condición se evalúa antes de ejecutar el bloque de instrucciones. Si la condición es verdadera, se ejecuta el bloque de instrucciones. Si la condición es falsa, no se ejecuta el bloque de instrucciones.',
-          },
-          {
-            order: 4,
-            type: 'snippet',
-            content: 'while (condición) { // Código a ejecutar }',
-          },
-        ],
-      },
-      {
-        type: 'practical',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Desafio de iteración WHILE',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'En este desafio deberas crear un bucle while cualquiera, sin error de sintaxis y que se ejecute correctamente. Puedes utilizar cualquier tipo de condicional que hayas aprendido hasta ahora.',
-          },
-          {
-            order: 3,
-            type: 'code_challenge',
-            content: 'i=2; while (){ console.log(i); }',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 5,
-    title: 'Funciones',
-    slug: 'funciones',
-    description: 'En esta pagina aprenderas a utilizar funciones en JavaScript',
-    lessons: [
-      {
-        type: 'teoric',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Funciones',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'Una función es un bloque de código diseñado para realizar una tarea específica. Una función se ejecuta cuando algo la invoca (la llama).',
-          },
-          {
-            order: 3,
-            type: 'paragraph',
-            content:
-              'En JavaScript, las funciones se definen con la palabra clave function, seguida de un nombre, seguido de paréntesis ().',
-          },
-          {
-            order: 4,
-            type: 'paragraph',
-            content: 'Las funciones pueden tomar parámetros (argumentos).',
-          },
-          {
-            order: 5,
-            type: 'paragraph',
-            content:
-              'Los parámetros se enumeran entre paréntesis () en la definición de la función.',
-          },
-          {
-            order: 6,
-            type: 'paragraph',
-            content:
-              'La función anterior (funcion1) tiene un parámetro llamado nombre. El valor del parámetro se pasa a la función cuando se llama a la función.',
-          },
-          {
-            order: 7,
-            type: 'snippet',
-            content: 'function funcion1(nombre) { // Código a ejecutar }',
-          },
-          {
-            order: 8,
-            type: 'paragraph',
-            content:
-              'Las funciones a menudo calculan un valor de retorno. El valor de retorno se devuelve de la función.',
-          },
-          {
-            order: 9,
-            type: 'paragraph',
-            content:
-              'La función anterior (funcion1) devuelve el resultado de multiplicar el parámetro x por 2.',
-          },
-          {
-            order: 10,
-            type: 'snippet',
-            content: 'function funcion1(x) { return 2 * x; }',
-          },
-        ],
-      },
-      {
-        type: 'practical',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Desafio de funciones',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'En este desafio deberas modificar una funcion, para que este sin error de sintaxis y que se ejecute correctamente.',
-          },
-          {
-            order: 3,
-            type: 'code_challenge',
-            content: ' funcion1(){ console.log("Hola Mundo"); }',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 6,
-    title: 'Objetos',
-    slug: 'objetos',
-    description: 'En esta pagina aprenderas a utilizar objetos en JavaScript',
-    lessons: [
-      {
-        type: 'teoric',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Objetos',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'En JavaScript, casi todo es un objeto. Los objetos son valores en JavaScript. Se debe considerar que los objetos tienen propiedades y métodos. Se Puede acceder a las propiedades de un objeto con un punto (.). Tambien los objetos se pueden definir con llaves {}.',
-          },
-          {
-            order: 4,
-            type: 'paragraph',
-            content:
-              'Las propiedades y los métodos se definen dentro de las llaves. Los objetos JavaScript son contenedores para valores con nombre. Los valores se escriben como pares de nombre: valor (nombre y valor separados por dos puntos). Y ademas los métodos son acciones que se pueden realizar en objetos.',
-          },
-          {
-            order: 5,
-            type: 'snippet',
-            content:
-              'var persona = {nombre: "Juan", apellido: "Perez", edad: 25, colorDeOjos: "azul"};',
-          },
-          {
-            order: 6,
-            type: 'paragraph',
-            content:
-              'Los métodos son acciones que se pueden realizar en objetos. Los métodos se almacenan en propiedades como funciones. Un método es una función almacenada como una propiedad.',
-          },
-          {
-            order: 7,
-            type: 'snippet',
-            content:
-              'var persona = {nombre: "Juan", apellido: "Perez", edad: 25, colorDeOjos: "azul", nombreCompleto: function() { return this.nombre + " " + this.apellido; }};',
-          },
-          {
-            order: 8,
-            type: 'paragraph',
-            content:
-              'El ejemplo anterior define un objeto llamado persona, con cuatro propiedades. Las propiedades son llamadas nombre, apellido, edad y colorDeOjos. El método se llama nombreCompleto y es una función que devuelve el nombre y el apellido de la persona.',
-          },
-        ],
-      },
-      {
-        type: 'practical',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Desafio de objetos',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'En este desafio deberas modificar un objeto, para que este sin error de sintaxis y que se ejecute correctamente.',
-          },
-          {
-            order: 3,
-            type: 'code_challenge',
-            content:
-              ' var persona ? {nombre: "Juan", apellido: "Perez", edad: 25, colorDeOjos: "azul"};',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 7,
-    title: 'Arrays',
-    slug: 'arrays',
-    description: 'En esta pagina aprenderas a utilizar arrays en JavaScript',
-    lessons: [
-      {
-        type: 'teoric',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Arrays',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'Los arrays son objetos JavaScript para almacenar varios valores en una sola variable. Los arrays se pueden escribir con corchetes [ ], Los elementos de los arrays se separan con comas, estos son contenedores para valores y se escriben como pares de nombre: valor (nombre y valor separados por dos puntos).',
-          },
-          {
-            order: 3,
-            type: 'snippet',
-            content: 'var frutas = ["Manzana", "Banana", "Naranja"];',
-          },
-          {
-            order: 4,
-            type: 'paragraph',
-            content: 'Los arrays se pueden definir con llaves { }.',
-          },
-          {
-            order: 5,
-            type: 'snippet',
-            content: 'var frutas = {nombre: "Manzana", color: "Rojo"};',
-          },
-          {
-            order: 6,
-            type: 'paragraph',
-            content: 'Los arrays se pueden definir con la palabra clave new.',
-          },
-          {
-            order: 7,
-            type: 'snippet',
-            content: 'var frutas = new Array("Manzana", "Banana", "Naranja");',
-          },
-        ],
-      },
-      {
-        type: 'practical',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Desafio de arrays',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'En este desafio deberas crear un array cualquiera, sin error de sintaxis y que se ejecute correctamente. Puedes utilizar cualquier tipo de condicional que hayas aprendido hasta ahora.',
-          },
-          {
-            order: 3,
-            type: 'code_challenge',
-            content: '',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 8,
-    title: 'Condicional if anidado',
-    slug: 'condicional-if-anidado',
-    description:
-      'En esta pagina aprenderas a utilizar condicionales if anidados en JavaScript',
-    lessons: [
-      {
-        type: 'teoric',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Condicional IF anidado',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'if anidado: Un if anidado es una sentencia if que está dentro de otro if o else. Anidado: Si las sentencias significan una sentencia if dentro de una sentencia if. Sí, JavaScript nos permite anidar las sentencias if dentro de las sentencias if, es decir, podemos colocar una sentencia if dentro de otra sentencia if.',
-          },
-          {
-            order: 3,
-            type: 'snippet',
-            content: 'if (condición1){if (condición2)}',
-          },
-        ],
-      },
-      {
-        type: 'practical',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Desafio de condicional if anidado',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'En este desafio deberas modificar un condicional if anidado cualquiera, para que este sin error de sintaxis y que se ejecute correctamente.',
-          },
-          {
-            order: 3,
-            type: 'code_challenge',
-            content: ' if (sexo="mujer"){if sexo"hombre"}',
-          },
-        ],
-      },
-    ],
-  },
-  {
-    id: 9,
-    title: 'Condicional if else',
-    slug: 'condicional-if-else',
-    description:
-      'En este apartado aprenderas a utilizar condicionales if else en JavaScript',
-    lessons: [
-      {
-        type: 'teoric',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Condicional if-else',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'La sentencia if sola nos dice que si una condición es verdadera ejecutará un bloque de declaraciones o sentencias JavaScript y si la condición es falsa no lo hará. Pero qué pasa si queremos hacer algo más si la condición es falsa. Aquí viene la otra declaración. Podemos usar la instrucción else con la instrucción if para ejecutar un bloque de código cuando la condición es falsa.',
-          },
-          {
-            order: 3,
-            type: 'snippet',
-            content: 'if (condición){} else {}',
-          },
-        ],
-      },
-      {
-        type: 'practical',
-        ovaMessage: 'Sigue así!',
-        ovaSide: 'left',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Desafio de condicional if-else',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content:
-              'En este desafio deberas modificar un condicional if-else cualquiera, para que este sin error de sintaxis y que se ejecute correctamente.',
-          },
-          {
-            order: 3,
-            type: 'code_challenge',
-            content:
-              ' if (x > y) {    alert("Hello world!");  } seel {    alert("Goodbye");  }',
-          },
-        ],
-      },
-    ],
-  },
-  /* {
-    id: 8,
-    title: 'Bucles',
-    slug: 'bucles',
-    description: 'En esta pagina aprenderas a utilizar bucles en JavaScript',
-    lessons: [
-      {
-        type: 'teoric',
-        content: [
-          {
-            order: 1,
-            type: 'title',
-            content: 'Bucles',
-          },
-          {
-            order: 2,
-            type: 'paragraph',
-            content: 'Los bucles se pueden utilizar para ejecutar un bloque de código varias veces. Los bucles se pueden dividir en tres partes: Inicialización, Condición y Expresión final. Los bucles se pueden dividir en tres partes: Inicialización, Condición y Expresión final.'
-          },
-          {
-            order: 3,
-            type: 'snippet',
-            content: 'for (inicialización; condición; expresión final) { código a ejecutar }',
-          },
-          {
-            order: 4,
-            type: 'paragraph',
-            content: 'El bucle for se puede utilizar cuando se conoce el número de iteraciones. El bucle for se puede utilizar cuando se conoce el número de iteraciones.'
-          },
-          {
-            order: 5,
-            type: 'snippet',
-            content: 'var i = 0; while (i < 10) { console.log(i); i++; }',
-          },
-          {
-            order: 6,
-            type: 'paragraph',
-            content: 'El bucle while se puede utilizar cuando no se conoce el número de iteraciones. El bucle while se puede utilizar cuando no se conoce el número de iteraciones.'
-          },
-          {
-            order: 7,
-            type: 'snippet',
-            content: 'var i = 0; do { console.log(i); i++; } while (i < 10);',
-          },
-        ],
-      },
-    ],
-  },
-   */
+  [
+    {
+      id: 0,
+      title: 'Introducción a la teoria de colas',
+      slug: 'introduccion',
+      description: 'Breve introducción a los modelos de linea de espera',
+      lessons: [
+        {
+          type: 'Teoric',
+          ovaMessage: 'Buen trabajo!',
+          ovaSide: 'right',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: '¿Qué es la teoria de colas?',
+            },
+            {
+              order: 1,
+              type: 'paragraph',
+              content:
+                'La teoría de colas es el estudio matemático de las colas o líneas de espera dentro de un sistema. Esta teoría estudia factores como el tiempo de espera medio en las colas o la capacidad de trabajo del sistema sin que llegue a colapsar. Dentro de las matemáticas, la teoría de colas se engloba en la investigación de operaciones y es un complemento muy importante a la teoría de sistemas y la teoría de control. Se trata así de una teoría que encuentra aplicación en una amplia variedad de situaciones como negocios, comercio, industria, ingenierías, transporte y logística o telecomunicaciones.',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'La teoría de colas permite modelar sistemas en los que existe una población de agentes (también llamados clientes o usuarios) que demandan cierto servicio que es proporcionado por uno o más servidores (también llamados recursos). Dado que puede haber más agentes que recursos, pueden registrarse esperas desde que un agente llega al sistema hasta que el servidor atiende su demanda, o incluso un agente puede ser rechazado del sistema al no haber espacio donde esperar (esto es, una cola). La teoría de colas sirve para modelar procesos tales como la llegada de datos a una cola en ciencias de la computación, la congestión en red de computadoras o de telecomunicación, o la implementación de una cadena productiva en la ingeniería industrial.',
+            },
+            {
+              order: 4,
+              type: 'title2',
+              content: 'Historia',
+            },
+            {
+              order: 5,
+              type: 'paragraph',
+              content:
+                'El matemático danés Agner Krarup Erlang, trabajador de la Copenhagen Telephone Exchange, publicó el primer artículo sobre la teoría de colas en 1909.1​ Específicamente se preocupó del estudio del problema de dimensionamiento de líneas y centrales de conmutación telefónica para el servicio de llamadas. En su honor, la unidad de medida estadística del volumen de tráfico se denomina Erlang, así como un lenguaje de programación concurrente diseñado por Ericsson.',
+            },
+            {
+              order: 6,
+              type: 'paragraph',
+              content:
+                'Cincuenta años más tarde, el científico estadounidense y pionero en el análisis de redes de ordenadores Leonard Kleinrock desarrolló el uso de herramientas de teoría de colas para en análisis de redes de conmutación de paquetes, con su tesis doctoral presentada en 1962 (y publicada en forma de libro en 1964).',
+            },
+          ],
+        },
+        {
+          type: 'practical',
+          ovaMessage: 'Sigue así!',
+          ovaSide: 'left',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Selecciona la respuesta correcta',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                '¿Cuál es uno de los campos de aplicación de la teoría de colas mencionado en el texto?',
+            },
+            {
+              order: 3,
+              type: 'questionary',
+              content: [
+                {
+                  id: 0,
+                  active: false,
+                  correct: false,
+                  point: 'A',
+                  text: 'Astronomía y astrofísica.',
+                },
+                {
+                  id: 1,
+                  active: false,
+                  correct: false,
+                  point: 'B',
+                  text: 'Biología molecular y genética.',
+                },
+                {
+                  id: 2,
+                  active: false,
+                  correct: false,
+                  point: 'C',
+                  text: 'Arqueología y antropología.',
+                },
+                {
+                  id: 3,
+                  active: false,
+                  correct: true,
+                  point: 'D',
+                  text: 'Comercio y negocios.',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
+  [
+    {
+      id: 0,
+      title: 'Modelos de linea de espera',
+      slug: 'modelos-linea-espera',
+      description: 'test',
+      lessons: [
+        {
+          type: 'Teoric',
+          ovaMessage: 'Buen trabajo!',
+          ovaSide: 'right',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: '¿Qué son?',
+            },
+            {
+              order: 1,
+              type: 'paragraph',
+              content:
+                'Son herramientas matemáticas utilizadas para analizar y predecir el comportamiento de sistemas donde los clientes o las entidades llegan a un lugar y esperan para ser atendidos por uno o más servidores.',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'Los modelos de líneas de espera son herramientas matemáticas que permiten el estudio y la predicción del comportamiento de los sistemas de colas, brindando información valiosa para la planificación y la toma de decisiones en diversos entornos y sectores.',
+            },
+          ],
+        },
+        {
+          type: 'practical',
+          ovaMessage: 'Sigue así!',
+          ovaSide: 'left',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Selecciona la respuesta correcta',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                '¿Cuál es la principal utilidad de los modelos de líneas de espera en la planificación y toma de decisiones?',
+            },
+            {
+              order: 3,
+              type: 'questionary',
+              content: [
+                {
+                  id: 0,
+                  active: false,
+                  correct: false,
+                  point: 'A',
+                  text: 'Establecer el número óptimo de clientes en un sistema de colas.',
+                },
+                {
+                  id: 1,
+                  active: false,
+                  correct: false,
+                  point: 'B',
+                  text: 'Predecir el comportamiento de los clientes en un entorno determinado.',
+                },
+                {
+                  id: 2,
+                  active: false,
+                  correct: true,
+                  point: 'C',
+                  text: 'Brindar información valiosa para la planificación y toma de decisiones.',
+                },
+                {
+                  id: 3,
+                  active: false,
+                  correct: false,
+                  point: 'D',
+                  text: 'Determinar el tiempo promedio de espera de los clientes en una línea.',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 1,
+      title: 'Aplicaciones',
+      slug: 'aplciaciones',
+      description:
+        'En esta pagina aprenderas a utilizar condicionales en JavaScript',
+      lessons: [
+        {
+          type: 'Teoric',
+          ovaMessage: 'Buen trabajo!',
+          ovaSide: 'right',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Aplicación',
+            },
+            {
+              order: 1,
+              type: 'paragraph',
+              content:
+                'Se aplican en una amplia variedad de contextos, como aeropuertos, tiendas, centros de llamadas, hospitales, redes de computadoras y sistemas de transporte.',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'ayudan a los administradores y planificadores a comprender y optimizar el rendimiento de un sistema de colas, proporcionando información valiosa sobre el tiempo de espera promedio, la utilización del servidor, la capacidad del sistema y otros indicadores de desempeño',
+            },
+          ],
+        },
+        {
+          type: 'practical',
+          ovaMessage: 'Sigue así!',
+          ovaSide: 'left',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Selecciona la respuesta correcta',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'Pregunta: ¿En qué contextos se pueden aplicar los modelos de líneas de espera?',
+            },
+            {
+              order: 3,
+              type: 'questionary',
+              content: [
+                {
+                  id: 0,
+                  active: false,
+                  correct: false,
+                  point: 'A',
+                  text: 'Restaurantes, cines, museos y parques temáticos.',
+                },
+                {
+                  id: 1,
+                  active: false,
+                  correct: true,
+                  point: 'B',
+                  text: 'Aeropuertos, tiendas, centros de llamadas y hospitales.',
+                },
+                {
+                  id: 2,
+                  active: false,
+                  correct: false,
+                  point: 'C',
+                  text: 'Oficinas gubernamentales, gimnasios, hoteles y bancos.',
+                },
+                {
+                  id: 3,
+                  active: false,
+                  correct: false,
+                  point: 'D',
+                  text: 'Escuelas, estaciones de servicio, ferias y bibliotecas.',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: 'Utilidad',
+      slug: 'utilidad',
+      description:
+        'En esta pagina aprenderas a utilizar condicionales en JavaScript',
+      lessons: [
+        {
+          type: 'Teoric',
+          ovaMessage: 'Buen trabajo!',
+          ovaSide: 'right',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Utilidad',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'Gestión de servicios: Los modelos de líneas de espera pueden ayudar a determinar el número óptimo de servidores o cajeros necesarios para satisfacer la demanda de servicio de los clientes. Esto permite optimizar los recursos y minimizar los tiempos de espera.',
+            },
+            {
+              order: 3,
+              type: 'paragraph',
+              content:
+                'Diseño de sistemas de atención al cliente: Estos modelos pueden ayudar a diseñar la disposición física de una tienda o establecimiento, determinando la cantidad de cajas de pago necesarias, la ubicación óptima de los mostradores de servicio, etc.',
+            },
+            {
+              order: 4,
+              type: 'paragraph',
+              content:
+                'Planificación de capacidad: Los modelos de líneas de espera pueden ayudar a planificar y dimensionar la capacidad de un sistema. Por ejemplo, en el caso de una central telefónica, el modelo puede ayudar a determinar el número de líneas telefónicas requeridas para manejar una determinada cantidad de llamadas entrantes.',
+            },
+            {
+              order: 5,
+              type: 'paragraph',
+              content:
+                'Análisis de tráfico y transporte: Estos modelos pueden utilizarse para analizar el flujo de tráfico en carreteras, aeropuertos o sistemas de transporte público. Ayudan a comprender los cuellos de botella y a identificar posibles mejoras en la infraestructura.',
+            },
+            {
+              order: 6,
+              type: 'paragraph',
+              content:
+                'Optimización de procesos: Los modelos de líneas de espera pueden utilizarse para identificar los cuellos de botella en los procesos de producción y encontrar formas de optimizar la eficiencia y reducir los tiempos de espera.',
+            },
+          ],
+        },
+        {
+          type: 'practical',
+          ovaMessage: 'Sigue así!',
+          ovaSide: 'left',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Selecciona la respuesta correcta',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'Pregunta: ¿Cuál es una aplicación de los modelos de líneas de espera?',
+            },
+            {
+              order: 3,
+              type: 'questionary',
+              content: [
+                {
+                  id: 0,
+                  active: false,
+                  correct: false,
+                  point: 'A',
+                  text: 'Determinar la ubicación óptima de los mostradores de servicio en una tienda.',
+                },
+                {
+                  id: 1,
+                  active: false,
+                  correct: true,
+                  point: 'B',
+                  text: 'Identificar los cuellos de botella en los procesos de producción.',
+                },
+                {
+                  id: 2,
+                  active: false,
+                  correct: false,
+                  point: 'C',
+                  text: 'Analizar el flujo de tráfico en sistemas de transporte público.',
+                },
+                {
+                  id: 3,
+                  active: false,
+                  correct: false,
+                  point: 'D',
+                  text: 'Optimizar la disposición física de una central telefónica.',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: 'Aspectos importantes',
+      slug: 'aspectos-importantes',
+      description:
+        'En esta pagina aprenderas a utilizar condicionales en JavaScript',
+      lessons: [
+        {
+          type: 'Teoric',
+          ovaMessage: 'Buen trabajo!',
+          ovaSide: 'right',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Aspectos importantes',
+            },
+            {
+              order: 2,
+              type: 'title2',
+              content: 'Tasa de llegada (λ)',
+            },
+            {
+              order: 3,
+              type: 'paragraph',
+              content:
+                'Es la velocidad a la que llegan los clientes al sistema de espera. Se mide en clientes por unidad de tiempo (por ejemplo, clientes por minuto).',
+            },
+            {
+              order: 4,
+              type: 'title2',
+              content: 'Tasa de servicio (μ)',
+            },
+            {
+              order: 5,
+              type: 'paragraph',
+              content:
+                'Es la velocidad a la que se atienden los clientes en el sistema de espera. También se mide en clientes por unidad de tiempo.',
+            },
+            {
+              order: 6,
+              type: 'title2',
+              content: 'Distribución de llegadas y distribución de servicio',
+            },
+            {
+              order: 7,
+              type: 'paragraph',
+              content:
+                'Es importante determinar la distribución estadística que describe los patrones de llegada de los clientes al sistema y los patrones de tiempo de servicio. Algunas distribuciones comunes incluyen la distribución exponencial, la distribución de Poisson y la distribución normal.',
+            },
+            {
+              order: 8,
+              type: 'title2',
+              content: 'Número de servidores:',
+            },
+            {
+              order: 9,
+              type: 'paragraph',
+              content:
+                'Se refiere al número de personas o recursos disponibles para atender a los clientes en el sistema de espera. Puede haber un solo servidor o varios servidores trabajando simultáneamente.',
+            },
+            {
+              order: 10,
+              type: 'title2',
+              content: 'Capacidad del sistema',
+            },
+            {
+              order: 11,
+              type: 'paragraph',
+              content:
+                'Es importante considerar la capacidad máxima del sistema, es decir, cuántos clientes pueden estar presentes en el sistema de espera al mismo tiempo. Si la capacidad se alcanza, los clientes pueden ser rechazados o pueden formarse filas adicionales.',
+            },
+            {
+              order: 12,
+              type: 'title2',
+              content: 'Disciplina de servicio',
+            },
+            {
+              order: 13,
+              type: 'paragraph',
+              content:
+                'Se refiere a las reglas que determinan el orden en que se atienden los clientes en el sistema de espera. Algunas disciplinas comunes incluyen el orden de llegada (FIFO), prioridades, entre otros.',
+            },
+            {
+              order: 14,
+              type: 'title2',
+              content: 'Métricas de desempeño',
+            },
+            {
+              order: 15,
+              type: 'paragraph',
+              content:
+                'Los modelos de líneas de espera permiten calcular diversas métricas para evaluar el desempeño del sistema, como el tiempo promedio de espera en la cola, el tiempo promedio en el sistema, la longitud promedio de la cola, la utilización del servidor, entre otras.',
+            },
+            {
+              order: 16,
+              type: 'title2',
+              content: 'Estrategias de mejora',
+            },
+            {
+              order: 17,
+              type: 'paragraph',
+              content:
+                'El análisis del modelo de líneas de espera puede ayudar a identificar posibles áreas de mejora en el sistema, como agregar más servidores, modificar la disciplina de servicio, mejorar la capacidad del sistema o ajustar los horarios de atención.',
+            },
+          ],
+        },
+        {
+          type: 'practical',
+          ovaMessage: 'Sigue así!',
+          ovaSide: 'left',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Selecciona la respuesta correcta',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'Pregunta: ¿Cuál es la métrica utilizada para evaluar el desempeño del sistema en un modelo de líneas de espera?',
+            },
+            {
+              order: 3,
+              type: 'questionary',
+              content: [
+                {
+                  id: 0,
+                  active: false,
+                  correct: false,
+                  point: 'A',
+                  text: 'Tasa de llegada (λ)',
+                },
+                {
+                  id: 1,
+                  active: false,
+                  correct: false,
+                  point: 'B',
+                  text: 'Distribución de servicio',
+                },
+                {
+                  id: 2,
+                  active: false,
+                  correct: true,
+                  point: 'C',
+                  text: 'Tiempo promedio de espera en la cola',
+                },
+                {
+                  id: 3,
+                  active: false,
+                  correct: false,
+                  point: 'D',
+                  text: 'Número de servidores',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
 ];

@@ -6,7 +6,7 @@ export const LessonsRouter = () => {
   return (
     <Routes>
       <Route path='/' element={<LessonsLayout />}>
-        <Route path='/:id' element={<LessonPage />} />
+        <Route path='/:index/:id' element={<LessonPage />} />
       </Route>
     </Routes>
   );

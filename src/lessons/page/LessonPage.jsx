@@ -12,7 +12,6 @@ import {
 import { Prism } from '@mantine/prism';
 import { sampleLessons } from '../../sampleLesson';
 import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
-import { CodeEditor } from '../components/CodeEditor';
 import { useDisclosure } from '@mantine/hooks';
 
 import winnerSfx from '../../assets/winner.mp3';
@@ -23,6 +22,7 @@ import Confetti from 'react-confetti';
 
 import ova from '../../assets/ova.png';
 import { OvaCharacter } from '../components';
+import { Questionary } from '../components/Questionary';
 
 export const LessonPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -49,55 +49,61 @@ export const LessonPage = () => {
     setSearchParams({ page: page });
   }, [page]);
 
-  let { id } = useParams();
-
-  console.log(sampleLessons[id].lessons);
+  let { index, id } = useParams();
 
   return (
     <>
       <Container size='md' px='xs' my={64}>
         <Card shadow='sm' padding='lg' radius='md' withBorder>
           <Flex w='100%' h='100%' justify='center' direction='column'>
-            {sampleLessons[id].lessons[page].content.map((lesson, index) => {
-              switch (lesson.type) {
-                case 'title':
-                  return (
-                    <Title key={id + index} my={12}>
-                      {lesson.content}
-                    </Title>
-                  );
-                case 'paragraph':
-                  return (
-                    <Text key={id + index} my={12} size='lg'>
-                      {lesson.content}
-                    </Text>
-                  );
-                case 'snippet':
-                  return (
-                    <Prism
-                      key={id + index}
-                      my={12}
-                      language='javascript'
-                      withLineNumbers
-                    >
-                      {lesson.content}
-                    </Prism>
-                  );
-                case 'code_challenge':
-                  return (
-                    <CodeEditor
-                      key={id + index}
-                      content={lesson.content}
-                      onCanCanjear={setCanCanjear}
-                    />
-                  );
-                default:
-                  break;
+            {sampleLessons[index][id].lessons[page].content.map(
+              (lesson, index) => {
+                switch (lesson.type) {
+                  case 'title':
+                    return (
+                      <Title key={id + index} my={12}>
+                        {lesson.content}
+                      </Title>
+                    );
+                  case 'title2':
+                    return (
+                      <Title key={id + index} my={12} order={3}>
+                        {lesson.content}
+                      </Title>
+                    );
+                  case 'paragraph':
+                    return (
+                      <Text key={id + index} my={12} size='lg'>
+                        {lesson.content}
+                      </Text>
+                    );
+                  case 'snippet':
+                    return (
+                      <Prism
+                        key={id + index}
+                        my={12}
+                        language='javascript'
+                        withLineNumbers
+                      >
+                        {lesson.content}
+                      </Prism>
+                    );
+                  case 'questionary':
+                    return (
+                      <Questionary
+                        key={id + index}
+                        content={lesson.content}
+                        canCanjear={setCanCanjear}
+                      />
+                    );
+                  default:
+                    break;
+                }
               }
-            })}
+            )}
             <OvaCharacter
-              message={sampleLessons[id].lessons[page].ovaMessage}
-              side={sampleLessons[id].lessons[page].ovaSide}
+              message={sampleLessons[index][id].lessons[page].ovaMessage}
+              side={sampleLessons[index][id].lessons[page].ovaSide}
             />
             <Flex justify='space-between' mt={32}>
               {page > 0 && (
@@ -110,7 +116,7 @@ export const LessonPage = () => {
                   Atras
                 </Button>
               )}
-              {page === sampleLessons[id].lessons.length - 1 ? (
+              {page === sampleLessons[index][id].lessons.length - 1 ? (
                 <Button
                   size='md'
                   color='green'
@@ -127,7 +133,7 @@ export const LessonPage = () => {
                   size='md'
                   color='green'
                   onClick={() => handleOnClickNext()}
-                  disabled={page >= sampleLessons[id].lessons.length - 1}
+                  disabled={page >= sampleLessons[index][id].lessons.length - 1}
                 >
                   Siguiente
                 </Button>

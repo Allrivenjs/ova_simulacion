@@ -99,7 +99,7 @@ export const LessonPage = () => {
                   default:
                     break;
                 }
-              }
+              },
             )}
             <OvaCharacter
               message={sampleLessons[index][id].lessons[page].ovaMessage}
@@ -123,6 +123,9 @@ export const LessonPage = () => {
                   onClick={() => {
                     playWinner();
                     open();
+
+                    const points = Number(localStorage.getItem('points')) || 0;
+                    localStorage.setItem('points', points + 20);
                   }}
                   disabled={!canCanjear}
                 >

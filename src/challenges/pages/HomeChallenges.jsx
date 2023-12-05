@@ -39,7 +39,7 @@ export const HomeChallenges = () => {
             <Accordion.Control>Introducción</Accordion.Control>
             <Accordion.Panel>
               {sampleLessons[0].map(({ title, id }) => (
-                <Flex p={4} key={id}>
+                <Flex p={4} key={`${title}-${id}`}>
                   <ThemeIcon color='teal' size={24} radius='xl' mr={12}>
                     <IconCircleCheck size='1rem' />
                   </ThemeIcon>
@@ -58,7 +58,7 @@ export const HomeChallenges = () => {
             <Accordion.Control>Modelos de linea de espera</Accordion.Control>
             <Accordion.Panel>
               {sampleLessons[1].map(({ title, id }) => (
-                <Flex p={4}>
+                <Flex p={4} key={`${title}-${id}`}>
                   <ThemeIcon color='teal' size={24} radius='xl' mr={12}>
                     <IconCircleCheck size='1rem' />
                   </ThemeIcon>
@@ -90,7 +90,7 @@ export const HomeChallenges = () => {
             <Accordion.Control>Introducción</Accordion.Control>
             <Accordion.Panel>
               {sampleLessons[2].map(({ title, id }) => (
-                <Flex p={4}>
+                <Flex p={4} key={`${title}-${id}`}>
                   <ThemeIcon color='teal' size={24} radius='xl' mr={12}>
                     <IconCircleCheck size='1rem' />
                   </ThemeIcon>
@@ -109,7 +109,7 @@ export const HomeChallenges = () => {
             <Accordion.Control>Simulación de eventos</Accordion.Control>
             <Accordion.Panel>
               {sampleLessons[3].map(({ title, id }) => (
-                <Flex p={4}>
+                <Flex p={4} key={`${title}-${id}`}>
                   <ThemeIcon color='teal' size={24} radius='xl' mr={12}>
                     <IconCircleCheck size='1rem' />
                   </ThemeIcon>
@@ -128,7 +128,7 @@ export const HomeChallenges = () => {
             <Accordion.Control>Algoritmos probabilisticos</Accordion.Control>
             <Accordion.Panel>
               {sampleLessons[4].map(({ title, id }) => (
-                <Flex p={4}>
+                <Flex p={4} key={`${title}-${id}`}>
                   <ThemeIcon color='teal' size={24} radius='xl' mr={12}>
                     <IconCircleCheck size='1rem' />
                   </ThemeIcon>

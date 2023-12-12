@@ -18,7 +18,7 @@ import { sampleLessons } from '../../sampleLesson';
 
 export const HomeChallenges = () => {
   return (
-    <Box pt={20}>
+    <Box pt={20} pb={128}>
       <Container py={18}>
         <Flex align='center'>
           <Avatar size='lg'>RS</Avatar>
@@ -26,8 +26,30 @@ export const HomeChallenges = () => {
         </Flex>
       </Container>
       <Container size='xs' px='xs' mt={32}>
-        <Title order={1}>Teoria de colas</Title>
+        <Title order={3}>
+          OVA - Proyecto final para la manteria de Simulación
+        </Title>
 
+        <hr />
+        <Title order={4}>Presentado por:</Title>
+
+        <Text mt={8}>Fabián Alberto Sánchez Ruiz</Text>
+        <Text mt={8}>Sebastián Ricardo Cardenas</Text>
+        <Text mt={8}>Jaime Andres Ruiz Melendres</Text>
+        <Text mt={8}>Roosevelt Santos Vanegas</Text>
+        <Text mt={8}>Jose Daniel Muñoz Gomez</Text>
+
+        <hr />
+
+        <Title order={4}>Presentado a:</Title>
+
+        <Text mt={8}>EDISON ALBERTO SUAREZ DOMINGUEZ</Text>
+
+        <hr />
+
+        <Title order={1} mt={28}>
+          Teoria de colas
+        </Title>
         <Text mt={16}>2 lecciones | 1h de duración estimada</Text>
 
         <Accordion

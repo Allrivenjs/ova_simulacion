@@ -9,6 +9,7 @@ import {
   Title,
   Anchor,
   Avatar,
+  Box,
 } from '@mantine/core';
 
 import { IconCircleCheck } from '@tabler/icons-react';
@@ -17,7 +18,7 @@ import { sampleLessons } from '../../sampleLesson';
 
 export const HomeChallenges = () => {
   return (
-    <>
+    <Box pt={20}>
       <Container py={18}>
         <Flex align='center'>
           <Avatar size='lg'>RS</Avatar>
@@ -78,7 +79,7 @@ export const HomeChallenges = () => {
           Simulación
         </Title>
 
-        <Text mt={16}>2 lecciones | 1h de duración estimada</Text>
+        <Text mt={16}>3 lecciones | 1h de duración estimada</Text>
 
         <Accordion
           variant='contained'
@@ -142,8 +143,27 @@ export const HomeChallenges = () => {
               ))}
             </Accordion.Panel>
           </Accordion.Item>
+
+          <Accordion.Item value='redes-colas'>
+            <Accordion.Control>Redes de colas</Accordion.Control>
+            <Accordion.Panel>
+              {sampleLessons[5].map(({ title, id }) => (
+                <Flex p={4} key={`${title}-${id}`}>
+                  <ThemeIcon color='teal' size={24} radius='xl' mr={12}>
+                    <IconCircleCheck size='1rem' />
+                  </ThemeIcon>
+                  <Flex justify='space-between' align='center' w='100%'>
+                    <Anchor component={Link} to={`/lesson/${5}/${id}`}>
+                      {title}
+                    </Anchor>
+                    <Text color='green'>20/20</Text>
+                  </Flex>
+                </Flex>
+              ))}
+            </Accordion.Panel>
+          </Accordion.Item>
         </Accordion>
       </Container>
-    </>
+    </Box>
   );
 };

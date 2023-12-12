@@ -1214,4 +1214,534 @@ export const sampleLessons = [
       ],
     },
   ],
+  [
+    {
+      id: 0,
+      title: 'Redes de Colas',
+      slug: 'redes-colas',
+      description:
+        'Conceptos fundamentales y ejemplos de redes de colas en sistemas distribuidos',
+      lessons: [
+        {
+          type: 'Teoric',
+          ovaMessage: '¡Genial!',
+          ovaSide: 'right',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: '¿Qué son las redes de colas?',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'Las redes de colas son sistemas donde múltiples colas están interconectadas, con clientes que se mueven entre ellas siguiendo un conjunto de reglas definidas.',
+            },
+            {
+              order: 3,
+              type: 'paragraph',
+              content:
+                'Estos sistemas son utilizados para modelar situaciones donde los clientes pasan por diferentes fases o etapas de servicio en un sistema distribuido.',
+            },
+            {
+              order: 4,
+              type: 'title2',
+              content: 'Ejemplos',
+            },
+            {
+              order: 5,
+              type: 'paragraph',
+              content:
+                'Un ejemplo común son las redes de computadoras, donde los paquetes de datos se mueven entre diferentes nodos (colas) siguiendo rutas definidas por reglas de enrutamiento.',
+            },
+            {
+              order: 6,
+              type: 'paragraph',
+              content:
+                'Otro ejemplo son las cadenas de suministro, donde los productos pasan por diversas etapas de procesamiento y almacenamiento antes de llegar al consumidor final.',
+            },
+          ],
+        },
+        {
+          type: 'practical',
+          ovaMessage: '¡Sigue así!',
+          ovaSide: 'left',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Ejemplo de aplicación',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'Imagina una red de servicios en un centro comercial: los clientes ingresan al centro, van a diferentes tiendas, hacen compras y salen del centro.',
+            },
+            {
+              order: 3,
+              type: 'paragraph',
+              content:
+                'Cada tienda es una cola, y los clientes se mueven entre ellas siguiendo un patrón definido por sus preferencias de compra.',
+            },
+            {
+              order: 4,
+              type: 'title',
+              content: 'Pregunta',
+            },
+            {
+              order: 5,
+              type: 'paragraph',
+              content:
+                '¿Cuál es un ejemplo práctico que ilustre una red de colas en un entorno cotidiano?',
+            },
+            {
+              order: 6,
+              type: 'questionary',
+              content: [
+                {
+                  id: 0,
+                  active: false,
+                  correct: false,
+                  point: 'A',
+                  text: 'El tráfico en una intersección de calles.',
+                },
+                {
+                  id: 1,
+                  active: false,
+                  correct: true,
+                  point: 'B',
+                  text: 'El flujo de clientes en un centro comercial con varias tiendas.',
+                },
+                {
+                  id: 2,
+                  active: false,
+                  correct: false,
+                  point: 'C',
+                  text: 'El transporte público en una ciudad.',
+                },
+                {
+                  id: 3,
+                  active: false,
+                  correct: false,
+                  point: 'D',
+                  text: 'El funcionamiento de una sola tienda en un centro comercial.',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+
+    {
+      id: 1,
+      title: 'Redes de Colas Abiertas',
+      slug: 'redes-colas-abiertas',
+      description:
+        'Estudio de sistemas de colas con entrada y salida libre de clientes',
+      lessons: [
+        {
+          type: 'Teoric',
+          ovaMessage: '¡Excelente!',
+          ovaSide: 'right',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Introducción a Redes de Colas Abiertas',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'Las redes de colas abiertas son sistemas donde los clientes pueden entrar y salir libremente del sistema de colas en cualquier momento.',
+            },
+            {
+              order: 3,
+              type: 'paragraph',
+              content:
+                'Esto contrasta con las redes de colas cerradas, donde los clientes están restringidos a permanecer en el sistema hasta ser atendidos.',
+            },
+            {
+              order: 4,
+              type: 'title2',
+              content: 'Características Principales',
+            },
+            {
+              order: 5,
+              type: 'paragraph',
+              content:
+                'En las redes de colas abiertas, los clientes pueden llegar al sistema, recibir servicio y abandonar el sistema sin restricciones.',
+            },
+            {
+              order: 6,
+              type: 'paragraph',
+              content:
+                'Esta flexibilidad en la entrada y salida de clientes hace que estas redes sean útiles para modelar sistemas dinámicos con flujos de entrada y salida variables.',
+            },
+          ],
+        },
+        {
+          type: 'practical',
+          ovaMessage: '¡Muy bien!',
+          ovaSide: 'left',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Caracterizando Redes de Colas Abiertas',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                '¿Cuál es una característica principal de las redes de colas abiertas?',
+            },
+            {
+              order: 3,
+              type: 'questionary',
+              content: [
+                {
+                  id: 0,
+                  active: false,
+                  correct: false,
+                  point: 'A',
+                  text: 'Los clientes están restringidos a permanecer en el sistema hasta ser atendidos.',
+                },
+                {
+                  id: 1,
+                  active: false,
+                  correct: true,
+                  point: 'B',
+                  text: 'Los clientes pueden entrar y salir del sistema libremente.',
+                },
+                {
+                  id: 2,
+                  active: false,
+                  correct: false,
+                  point: 'C',
+                  text: 'No tienen tasa de llegada ni de servicio definidas.',
+                },
+                {
+                  id: 3,
+                  active: false,
+                  correct: false,
+                  point: 'D',
+                  text: 'La capacidad del sistema es fija y limitada.',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 2,
+      title: 'Redes de Colas Cerradas',
+      slug: 'redes-colas-cerradas',
+      description:
+        'Estudio de sistemas de colas con clientes restringidos a permanecer en el sistema',
+      lessons: [
+        {
+          type: 'Teoric',
+          ovaMessage: '¡Excelente!',
+          ovaSide: 'right',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Introducción a Redes de Colas Cerradas',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'Las redes de colas cerradas son sistemas donde los clientes están restringidos a permanecer en el sistema hasta ser atendidos y luego regresan al inicio del proceso.',
+            },
+            {
+              order: 3,
+              type: 'paragraph',
+              content:
+                'Estos sistemas son útiles para modelar escenarios donde los clientes deben pasar por una secuencia fija de etapas antes de abandonar el sistema.',
+            },
+            {
+              order: 4,
+              type: 'title2',
+              content: 'Características Principales',
+            },
+            {
+              order: 5,
+              type: 'paragraph',
+              content:
+                'En las redes de colas cerradas, los clientes siguen una trayectoria fija de etapas o servidores antes de salir del sistema.',
+            },
+            {
+              order: 6,
+              type: 'paragraph',
+              content:
+                'Estos sistemas pueden modelar procesos como líneas de producción, circuitos cerrados de comunicación, entre otros, donde hay un flujo predeterminado para los clientes.',
+            },
+          ],
+        },
+        {
+          type: 'practical',
+          ovaMessage: '¡Muy bien!',
+          ovaSide: 'left',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Caracterizando Redes de Colas Cerradas',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                '¿Qué distingue principalmente a las redes de colas cerradas?',
+            },
+            {
+              order: 3,
+              type: 'questionary',
+              content: [
+                {
+                  id: 0,
+                  active: false,
+                  correct: true,
+                  point: 'A',
+                  text: 'Los clientes deben pasar por una secuencia fija de etapas antes de abandonar el sistema.',
+                },
+                {
+                  id: 1,
+                  active: false,
+                  correct: false,
+                  point: 'B',
+                  text: 'Los clientes pueden entrar y salir del sistema libremente.',
+                },
+                {
+                  id: 2,
+                  active: false,
+                  correct: false,
+                  point: 'C',
+                  text: 'Los clientes no tienen un recorrido fijo en el sistema.',
+                },
+                {
+                  id: 3,
+                  active: false,
+                  correct: false,
+                  point: 'D',
+                  text: 'No hay restricciones para la capacidad del sistema.',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 3,
+      title: 'Redes Multiclase',
+      slug: 'redes-multiclase',
+      description:
+        'Estudio de sistemas de colas con múltiples clases de clientes',
+      lessons: [
+        {
+          type: 'Teoric',
+          ovaMessage: '¡Estupendo!',
+          ovaSide: 'right',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Introducción a Redes Multiclase',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'Las redes multiclase son sistemas de colas donde hay múltiples clases de clientes, cada clase con su propia cola y servidores dedicados o compartidos.',
+            },
+            {
+              order: 3,
+              type: 'paragraph',
+              content:
+                'Estos sistemas permiten modelar situaciones donde diferentes tipos de clientes requieren diferentes servicios o tienen prioridades distintas.',
+            },
+            {
+              order: 4,
+              type: 'title2',
+              content: 'Características Principales',
+            },
+            {
+              order: 5,
+              type: 'paragraph',
+              content:
+                'En las redes multiclase, cada clase de cliente sigue su propio camino a través del sistema de colas.',
+            },
+            {
+              order: 6,
+              type: 'paragraph',
+              content:
+                'Puede haber servidores dedicados para atender a cada clase de cliente o servidores compartidos entre diferentes clases, dependiendo de la configuración del sistema.',
+            },
+          ],
+        },
+        {
+          type: 'practical',
+          ovaMessage: '¡Fantástico!',
+          ovaSide: 'left',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Entendiendo Redes Multiclase',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                '¿Qué caracteriza principalmente a las redes multiclase?',
+            },
+            {
+              order: 3,
+              type: 'questionary',
+              content: [
+                {
+                  id: 0,
+                  active: false,
+                  correct: true,
+                  point: 'A',
+                  text: 'Existen múltiples clases de clientes con diferentes caminos a través del sistema de colas.',
+                },
+                {
+                  id: 1,
+                  active: false,
+                  correct: false,
+                  point: 'B',
+                  text: 'Todos los clientes siguen un mismo camino y comparten servidores.',
+                },
+                {
+                  id: 2,
+                  active: false,
+                  correct: false,
+                  point: 'C',
+                  text: 'No hay separación entre los diferentes tipos de clientes.',
+                },
+                {
+                  id: 3,
+                  active: false,
+                  correct: false,
+                  point: 'D',
+                  text: 'Solo existe una cola de espera para todos los clientes.',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 4,
+      title: 'Redes de Jackson',
+      slug: 'redes-de-jackson',
+      description:
+        'Estudio de sistemas de colas de Jackson abiertos y cerrados',
+      lessons: [
+        {
+          type: 'Teoric',
+          ovaMessage: '¡Genial!',
+          ovaSide: 'right',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Introducción a Redes de Jackson',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                'Las redes de Jackson son un tipo de sistemas de colas que se dividen en dos categorías principales: abiertas y cerradas.',
+            },
+            {
+              order: 3,
+              type: 'paragraph',
+              content:
+                'En las redes abiertas de Jackson, los clientes pueden entrar y salir del sistema, mientras que en las redes cerradas, los clientes permanecen dentro del sistema una vez que ingresan.',
+            },
+            {
+              order: 4,
+              type: 'title2',
+              content: 'Características Principales',
+            },
+            {
+              order: 5,
+              type: 'paragraph',
+              content:
+                'Las redes de Jackson son útiles para modelar sistemas con múltiples servidores y múltiples tipos de clientes.',
+            },
+            {
+              order: 6,
+              type: 'paragraph',
+              content:
+                'Estos modelos permiten analizar el rendimiento y la eficiencia de los sistemas bajo diferentes condiciones de carga y configuraciones.',
+            },
+          ],
+        },
+        {
+          type: 'practical',
+          ovaMessage: '¡Excelente!',
+          ovaSide: 'left',
+          content: [
+            {
+              order: 1,
+              type: 'title',
+              content: 'Comprender Redes de Jackson',
+            },
+            {
+              order: 2,
+              type: 'paragraph',
+              content:
+                '¿Cuál es la principal diferencia entre redes abiertas y cerradas de Jackson?',
+            },
+            {
+              order: 3,
+              type: 'questionary',
+              content: [
+                {
+                  id: 0,
+                  active: false,
+                  correct: true,
+                  point: 'A',
+                  text: 'En redes cerradas, los clientes permanecen en el sistema una vez que ingresan; en redes abiertas, los clientes pueden entrar y salir del sistema.',
+                },
+                {
+                  id: 1,
+                  active: false,
+                  correct: false,
+                  point: 'B',
+                  text: 'En redes cerradas, no hay servidores; en redes abiertas, los servidores atienden a múltiples clientes.',
+                },
+                {
+                  id: 2,
+                  active: false,
+                  correct: false,
+                  point: 'C',
+                  text: 'En redes cerradas, solo hay un tipo de cliente; en redes abiertas, hay múltiples tipos de clientes.',
+                },
+                {
+                  id: 3,
+                  active: false,
+                  correct: false,
+                  point: 'D',
+                  text: 'No hay diferencia, son términos intercambiables en teoría de colas.',
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+  ],
 ];
